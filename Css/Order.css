@@ -1,0 +1,14 @@
+.HeadButton{
+    background-color: #faf875;
+    font-size: 15px;
+    font-family: Courier, monospace;
+    border-radius: 5px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+ td{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }

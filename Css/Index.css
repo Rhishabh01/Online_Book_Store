@@ -1,0 +1,50 @@
+.Header{
+        background-color:rgb(255, 253, 232);
+        
+       
+       
+    }
+    .Header1{
+        background-color:rgb(255, 253, 232);
+        border-color: antiquewhite ;
+        border-style: groove;   
+      
+    }
+    
+   h2{
+    color: #000000;
+    background-color: beige;
+    font-family: Courier, monospace;
+    text-indent: 10px;
+   }
+
+   .HeadButton{
+    background-color: #faf875;
+    font-size: 15px;
+    font-family: Courier, monospace;
+    border-radius: 5px;
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+    a{
+        text-decoration: none;
+    }
+    
+    .Img{
+        width:150px;
+        height:220px;
+        object-fit:cover;
+        margin:10px;
+    }
+    .divs{
+        background:rgba(0, 0, 0, 0.473);
+         overflow-x:auto;
+          white-space:nowrap; 
+         border-radius: 5px;
+    }
+
+    img{
+        border-style: solid;
+        border-color: #000000;
+    }

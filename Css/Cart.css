@@ -1,0 +1,35 @@
+   .Header{
+        background-color:rgb(255, 253, 232);
+    }
+
+    .Header1{
+        background-color:rgb(255, 253, 232);
+        border-color: antiquewhite ;
+        border-style: groove;   
+    }
+
+   .HeadButton{
+        background-color: #faf875;
+        font-size: 15px;
+        font-family: Courier, monospace;
+        border-radius: 5px;
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    td{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    th{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 50px; 
+        padding-left: 50px;
+    }

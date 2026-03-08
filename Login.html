@@ -1,23 +1,60 @@
 <html>
-    <head>
-        <title>Login Page</title>
-    </head>
-    <body style="text-align: center; align-content: center; background-color: antiquewhite;">
-        
-        
-        <form style="background-color: aliceblue;background-size: auto;">
-        <h1> Login </h1>
-        <p>Username:<input type="text"></p>
-        <p>Password:<input type="password"></p>
-        <a href="Passreset" style="margin-right:140px;"> Forgot Password</a>
-        <br>
-        <a href="index.html"><button type="button" style="margin-top: 20px;">Login</button></a>
-        <br>
-        <a href="Register.html" style="margin-right:120px;">Register Here </a>
-        <a href="index.html"> Home</a>
-        </form> 
-       
-    </body>
+   <head>
+<title>Login Page</title>
 
+<script>
+
+function LoginEvent(event)
+{
+
+event.preventDefault();   // stops form from reloading
+
+const User = document.getElementById("user").value;
+const Pass = document.getElementById("pass").value;
+
+if(User === "User101" && Pass === "1234")
+{
+window.location.href = "index.html";
+}
+else
+{
+alert("Wrong username or password");
+}
+
+}
+
+</script>
+
+</head>
+
+
+<body style="text-align:center; align-content:center; background-color:antiquewhite;">
+
+<form style="background-color:aliceblue;" onsubmit="LoginEvent(event)">
+
+<h1>Login</h1>
+
+<p>
+Username:<input type="text" required id="user">
+</p>
+
+<p>
+Password:<input type="password" required id="pass">
+</p>
+
+<a href="Passreset.html" style="margin-right:140px;">Forgot Password</a>
+
+<br>
+
+<button type="submit" style="margin-top:20px;">Login</button>
+
+<br>
+
+<a href="Register.html" style="margin-right:120px;">Register Here</a>
+<a href="index.html">Home</a>
+
+</form>
+
+</body>
    
 </html>

@@ -57,67 +57,60 @@
 
 <div style="width: fit-content; margin: 60px auto; text-align: left;">
 
-    <form action="OrderFinal.html">
+<form action="OrderFinal.html">
 
-        <h2 style="text-align:center;">Select your preferred payment</h2>
+<h2 style="text-align:center;">Select your preferred payment</h2>
 
-        <p>
-            <input type="radio" name="Payment" > Gpay / Online Payment
-        </p>
+<p>
+<input type="radio" name="payment" value="online" required>
+Gpay / Online Payment
+</p>
 
-        <p>
-            <input type="radio" name="Payment"> Cash On Delivery
-        </p>
+<p>
+<input type="radio" name="payment" value="cod">
+Cash On Delivery
+</p>
 
-        <p>
-            Address here:
-            <input type="text" placeholder="street-101" >
-        </p>
 
-        <h2 style="text-align:center;">or</h2>
 
-        <p>
-            <input type="radio" name="Payment"> Debit / Credit Card
-        </p>
+<h2 style="text-align:center;">or</h2>
 
-        <p>
-            Card Holder Name =
-            <input type="text" placeholder="Your Name">
-        </p>
+<p>
+<input type="radio" name="payment" value="card"> Debit / Credit Card
+</p>
 
-        <p>
-            Card Number =
-            <input type="tel" placeholder="1234-1234-1234-1234">
-        </p>
+<p>
+Card Holder Name =<input type="text" name="cardname" placeholder="Your Name" required>
+</p>
 
-        <p>
-            Expiry Date =
-            <input type="month">
-        </p>
+<p>
+Card Number =<input type="tel" name="cardnumber" placeholder="1234-1234-1234-1234" required>
+</p>
 
-        <p>
-            CVV =
-            <input type="password" placeholder="000">
-        </p>
+<p>
+Expiry Date =<input type="month" name="expiry">
+</p>
 
-        <p style="margin-bottom: 30px; font-size: 20px;">
-            Have A Coupon?:
-            <input type="text" value="FirstVisit01" size="18">
-            <button type="button" style="margin-left: 10px;border-radius: 5px;">Apply</button>
-        </p>
+<p>
+CVV = <input type="password" name="cvv" placeholder="000" required>
+</p>
 
-        <div style="text-align:center;">
-            <button type="button" style="width: 160px; height: 30px; margin-right: 20px;"
-                onclick="window.location.href='index.html'">
-                Continue Shopping
-            </button>
+<p>
+Address here: <input type="text" name="address" placeholder="Street-101" required>
+</p>
 
-            <button type="submit" style="width: 160px; height: 30px;"onclick="window.location.href='OrderFinal.html'">
-                Order Now
-            </button>
-        </div>
+<p style="margin-bottom:30px;font-size:20px;">Have A Coupon?: <input type="text" name="coupon" value="FirstVisit01" size="18">
+<button type="button" style="margin-left:10px;border-radius:5px;">Apply</button>
+</p>
 
-    </form>
+
+
+<div style="text-align:center;margin-top:10px;">
+<button type="button" onclick="window.location.href='index.html'" style="width:160px;height:30px;">Continue Shopping </button>
+<input type="submit" style="width:160px;height:30px;" value="Order Now">
+</div>
+
+</form>
 
 </div>
 
